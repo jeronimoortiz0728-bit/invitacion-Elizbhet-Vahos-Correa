@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8d5df" />
+  <meta name="description" content="Invitación de cumpleaños de Elizbhet Vahos Correa" />
+  <title>Celebramos a Elizbhet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader__sparkle">✦</div>
+  </div>
+
+  <div class="ambient ambient--one"></div>
+  <div class="ambient ambient--two"></div>
+  <div class="ambient ambient--three"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <main class="invitation-shell" id="invitation">
+    <section class="hero panel reveal">
+      <div class="hero__ribbon">Una noche para celebrar</div>
+      <p class="eyebrow">Estás invitado(a) a celebrar</p>
+      <h1 class="birthday-title">El cumpleaños de</h1>
+      <p class="celebrant-name">Elizbhet</p>
+      <p class="surname">Vahos Correa</p>
+      <div class="hero__divider" aria-hidden="true"><span>✦</span></div>
+      <p class="hero__message">Una velada bonita se disfruta más<br />cuando se comparte con quienes queremos.</p>
+
+      <figure class="portrait-frame">
+        <img src="assets/elizbhet-vahos-correa.jpeg" alt="Elizbhet Vahos Correa" />
+        <figcaption>La homenajeada</figcaption>
+      </figure>
+
+      <button class="primary-button" id="openInvitation" type="button">
+        <span class="button-icon">✦</span>
+        Ver los detalles
+      </button>
+    </section>
+
+    <section class="details panel is-hidden" id="details" aria-hidden="true">
+      <div class="section-heading reveal-on-open">
+        <p class="eyebrow">Reserva la fecha</p>
+        <h2>Una noche<br /><em>especial</em></h2>
+      </div>
+
+      <div class="date-card reveal-on-open">
+        <div class="date-card__day">11</div>
+        <div class="date-card__month">
+          <span>JULIO</span>
+          <small>SÁBADO · 2026</small>
+        </div>
+        <div class="date-card__time">7:30<br /><span>PM</span></div>
+      </div>
+
+      <div class="countdown reveal-on-open" aria-label="Cuenta regresiva para la fiesta">
+        <div><strong id="days">00</strong><span>días</span></div>
+        <div><strong id="hours">00</strong><span>horas</span></div>
+        <div><strong id="minutes">00</strong><span>min</span></div>
+        <div><strong id="seconds">00</strong><span>seg</span></div>
+      </div>
+
+      <article class="info-card reveal-on-open">
+        <span class="info-card__icon">⌖</span>
+        <div>
+          <p class="info-card__label">Lugar</p>
+          <h3>Carrera 22 # 29 - 38</h3>
+          <p>Barrio Trinidad · Palmira, Valle</p>
+        </div>
+      </article>
+
+      <a class="outline-button reveal-on-open" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Carrera%2022%20%2329-38%2C%20Barrio%20Trinidad%2C%20Palmira%2C%20Valle%20del%20Cauca">
+        Ver ubicación en Maps <span>↗</span>
+      </a>
+
+      <article class="message-card reveal-on-open">
+        <p>“Que nunca falten motivos para brindar, reír y crear recuerdos juntos.”</p>
+      </article>
+
+      <button class="primary-button rsvp-button reveal-on-open" id="rsvpButton" type="button">
+        Confirmar asistencia <span>♡</span>
+      </button>
+      <p class="rsvp-hint reveal-on-open">El botón abre directamente el chat de WhatsApp con el mensaje listo para enviar.</p>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
