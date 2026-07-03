@@ -1,5 +1,5 @@
 /*
-  INVITACIÓN ELIZBHET VAHOS CORREA
+  INVITACIÓN ELIZBETH VAHOS CORREA
   -------------------------------------------------
   El botón de confirmación abre directamente WhatsApp con un mensaje
   predeterminado. El número está configurado con el indicativo de Colombia.
@@ -30,7 +30,7 @@ openInvitation.addEventListener("click", () => {
 
 /* Va directamente al chat de WhatsApp, con el mensaje listo para enviar. */
 rsvpButton.addEventListener("click", () => {
-  const message = "Hola, confirmo mi asistencia a la celebración de Elizbhet Vahos Correa el sábado 11 de julio de 2026. ¡Gracias!";
+  const message = "Hola, confirmo mi asistencia a la celebración de ELIZBETH VAHOS CORREA el sábado 11 de julio de 2026. ¡Gracias!";
   const destination = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   window.open(destination, "_blank", "noopener,noreferrer");
